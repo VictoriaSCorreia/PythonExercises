@@ -1,12 +1,11 @@
 # FUNÇÕES, VALIDANDO NÚMERO INTEIRO
 
 def leiaint(n):
-    alfabeto = list(map(chr, range(97, 123)))
     while True:
         teste = False
         for l in n:
             if l in '.,':
-                teste = False
+                teste = True
         if n.isnumeric():
             teste = True
         if teste:
